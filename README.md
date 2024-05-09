@@ -43,8 +43,18 @@ In the app press key:
 ## 
 U2Eyes.exe /c config/camera4k.xml /e config/scene.xml /h config/many_headpose.xml /u config/userid.xml
 
+## Image generation for head-mounted eye-tracking devices
+Mainly the HeadposeDef information is defined
 
+
+```
 import random
+
+print("""<?xml version="1.0" encoding="utf-8"?>
+<Headposes xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Headpose>""")
+
 for i in range(30):
         print("""      <HeadposeDef>
          <Rotation><x>0</x><y>0</y><z>0</z></Rotation>
@@ -55,3 +65,9 @@ for i in range(30):
             <z>0</z>
          </LookAtPoint>
       </HeadposeDef>""")
+           
+            
+print("""   </Headpose>
+</Headposes>""")
+
+```
