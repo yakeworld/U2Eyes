@@ -38,3 +38,20 @@ In the app press key:
 - 'h' to randomize headpose
 - 'u' to randomize face
 - 's' to export images
+
+
+## 
+U2Eyes.exe /c config/camera4k.xml /e config/scene.xml /h config/many_headpose.xml /u config/userid.xml
+
+
+import random
+for i in range(30):
+        print("""      <HeadposeDef>
+         <Rotation><x>0</x><y>0</y><z>0</z></Rotation>
+         <Position><x>0</x><y>4</y><z>25</z></Position>
+         <LookAtPoint>
+            <x>"""+str(random.randint(-5,5))+"""</x>
+            <y>"""+str(random.randint(-5,5))+"""</y>
+            <z>0</z>
+         </LookAtPoint>
+      </HeadposeDef>""")
