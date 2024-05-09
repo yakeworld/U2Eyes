@@ -41,7 +41,7 @@ In the app press key:
 
 
 ##  U2Eyes.exe
-You can download an installed version of the software (U2EyesApp.zip) (here), so you don't have to install Unity and compile the software.
+You can download an installed version of the software (U2EyesApp.zip) (https://drive.google.com/file/d/1XOejS_IYJbtiqz74rQcl-v7Zg3C4WJo4/view?usp=sharing), so you don't have to install Unity and compile the software.
 
 Once you have unzipped the file, execute U2Eyes.exe file, it will generate a random example (image + configuration files) in the output folder.
 
