@@ -40,7 +40,18 @@ In the app press key:
 - 's' to export images
 
 
-## 
+##  U2Eyes.exe
+You can download an installed version of the software (U2EyesApp.zip) (here), so you don't have to install Unity and compile the software.
+
+Once you have unzipped the file, execute U2Eyes.exe file, it will generate a random example (image + configuration files) in the output folder.
+
+You can use and modify these files to pass them as arguments to the software in order to generate customised conditions:
+
+open cmd
+go to U2EyesApp folder
+write:
+U2Eyes.exe /i /u "FULLPATHTO/userid.xml" /c""FULLPATHTO/camera.xml" /e "FULLPATHTO/scene.xml" /h "FULLPATHTO/headpose.xml"
+
 U2Eyes.exe /c config/camera4k.xml /e config/scene.xml /h config/many_headpose.xml /u config/userid.xml
 
 ## Image generation for head-mounted eye-tracking devices
